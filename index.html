@@ -18,5 +18,75 @@
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body></body>
+  <body class="bg-paleBlue h-screen flex md:items-center md:justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 max-w-3xl">
+      <div
+        class="flex flex-col items-center gap-1.6 md:gap-2.4 p-2.4 bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-b-3xl md:rounded-t-3xl z-10"
+      >
+        <h2 class="text-lightLavender md:text-2.4">Your Result</h2>
+        <div
+          class="flex flex-col gap-0.2 justify-center items-center w-[150px] md:w-[200px] h-[150px] md:h-[200px] rounded-full bg-gradient-to-b from-violetBlue to-persianBlue"
+        >
+          <p class="text-5.2 md:text-6.2 text-white font-extrabold">76</p>
+          <p class="text-lightLavender md:text-1.8">of 100</p>
+        </div>
+        <div class="flex flex-col gap-0.8">
+          <p class="text-paleBlue text-center text-2.4 md:text-3 font-bold">
+            Great
+          </p>
+          <p class="text-lightLavender text-center md:w-[60%] md:self-center">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-1.6 md:gap-2.4 p-2.4 pt-4.8 md:pr-4.8 md:pl-6.4 md:py-4.8 bg-white mt-[-19px] md:mt-[0px] md:ml-[-19px] md:rounded-r-3xl"
+      >
+        <p class="font-semibold text-1.8 md:text-2">Summary</p>
+        <ul class="flex flex-col gap-1.6">
+          <li class="flex justify-between p-1.6 rounded-lg bg-lightRed/10">
+            <div class="flex items-center gap-0.8">
+              <img src="./images/icon-reaction.svg" alt="reaction icon" />
+              <p class="text-lightRed">Reaction</p>
+            </div>
+            <div class="font-bold">
+              <p>80 <span class="text-darkGrayBlue/50">/ 100</span></p>
+            </div>
+          </li>
+          <li class="flex justify-between p-1.6 rounded-lg bg-orangeyYellow/10">
+            <div class="flex items-center gap-0.8">
+              <img src="./images/icon-memory.svg" alt="memory icon" />
+              <p class="text-orangeyYellow">Memory</p>
+            </div>
+            <div class="font-bold">
+              <p>92 <span class="text-darkGrayBlue/50">/ 100</span></p>
+            </div>
+          </li>
+          <li class="flex justify-between p-1.6 rounded-lg bg-greenTeal/10">
+            <div class="flex items-center gap-0.8">
+              <img src="./images/icon-verbal.svg" alt="verbal icon" />
+              <p class="text-greenTeal">Verbal</p>
+            </div>
+            <div class="font-bold">
+              <p>61 <span class="text-darkGrayBlue/50">/ 100</span></p>
+            </div>
+          </li>
+          <li class="flex justify-between p-1.6 rounded-lg bg-cobaltBlue/10">
+            <div class="flex items-center gap-0.8">
+              <img src="./images/icon-visual.svg" alt="visual icon" />
+              <p class="text-cobaltBlue">Visual</p>
+            </div>
+            <div class="font-bold">
+              <p>72 <span class="text-darkGrayBlue/50">/ 100</span></p>
+            </div>
+          </li>
+        </ul>
+        <button
+          class="bg-darkGrayBlue hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue transition-colors duration-300 text-white py-1.6 rounded-full"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
